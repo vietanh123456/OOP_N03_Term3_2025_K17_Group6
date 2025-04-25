@@ -1,4 +1,4 @@
-# Group 6 Project: Xây dựng ứng dụng quản lý và phân phối game.
+# Group 6 Project: Xây dựng ứng dụng quản lý game.
 # Thành viên:
 
 1. Hoàng Việt Anh
