@@ -18,13 +18,19 @@
 
 # công nghệ sử dụng:
 Ngôn ngữ: Java
+
 Giao diện người dùng (UI):JavaFX
+
 Lưu trữ dữ liệu:MySQL
 # Giao diện:
 Một bảng hiển thị danh sách game (tên, nền tảng, thể loại, trạng thái)
+
 Thanh tìm kiếm ở trên
+
 Các nút: “Thêm game”, “Sửa”, “Xóa”, “Thống kê”, “Lọc”
+
 Form nhập liệu khi bấm "Thêm game"
+
 # Thành viên:
 1. Hoàng Việt Anh
 2. Nguyễn Quốc Quang Anh
