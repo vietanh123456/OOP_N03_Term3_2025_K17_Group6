@@ -4,6 +4,7 @@ class User:
         self.username = username
         self.email = email
         self.avatar = avatar
+        self.library = []  
 
     def add_game(self, user_game):
         self.library.append(user_game)
