@@ -6,18 +6,7 @@
 
 2. Xem danh sách game (dạng bảng).
 
-3. Tìm kiếm game theo tên hoặc nền tảng.
-
-4. Lọc game theo thể loại hoặc trạng thái.
-
-5. Sửa thông tin game (ví dụ: muốn cập nhật trạng thái từ "Đang chơi" sang "Hoàn thành").
-
-6. Xóa game không còn trong thư viện.
-
-7. Thống kê số lượng game theo thể loại hoặc nền tảng.
-
-# Công nghệ sử dụng:
-Ngôn ngữ lập trình: Java
+3. Tìm ữ lập trình: Java
 
 Giao diện người dùng (UI):JavaFX
 
@@ -36,3 +25,15 @@ Form nhập liệu khi bấm "Thêm game"
 2. Nguyễn Quốc Quang Anh
 3. Nguyễn Thế Cường
 4. Nguyễn Lệ Thu
+kiếm game theo tên hoặc nền tảng.
+
+4. Lọc game theo thể loại hoặc trạng thái.
+
+5. Sửa thông tin game (ví dụ: muốn cập nhật trạng thái từ "Đang chơi" sang "Hoàn thành").
+
+6. Xóa game không còn trong thư viện.
+
+7. Thống kê số lượng game theo thể loại hoặc nền tảng.
+
+# Công nghệ sử dụng:
+Ngôn ng
