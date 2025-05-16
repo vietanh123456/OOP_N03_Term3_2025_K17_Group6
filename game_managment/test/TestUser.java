@@ -1,8 +1,13 @@
-class TestUser{
+public class TestUser {
+    public static void main(String[] args) {
+        User user = new User("Cuong", "Cuong@gmail.com", "123456");
 
-    public static void test(){
-        User u = new User("Nguyen", "nguyen@gmail.com", "*****");
-        System.out.println(u.getUsername());
+        System.out.println("Username: " + user.getUsername());
+        System.out.println("Email: " + user.getEmail());
+        System.out.println("Password: " + user.getPassword());
 
+
+        user.setUsername("Cuonggg");
+        System.out.println("Updated Username: " + user.getUsername());
     }
 }
