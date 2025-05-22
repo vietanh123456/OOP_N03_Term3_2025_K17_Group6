@@ -47,3 +47,5 @@ kiếm game theo tên hoặc nền tảng.
 
 # Công nghệ sử dụng:
 Ngôn ng
+
+<img src="img/Activity.jpg">
