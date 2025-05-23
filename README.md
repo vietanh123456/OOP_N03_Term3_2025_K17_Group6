@@ -48,4 +48,13 @@ kiếm game theo tên hoặc nền tảng.
 # Công nghệ sử dụng:
 Ngôn ngữ Java
 
-<img src="img/Activity.jpg">
+
+# diagram
+1. activity
+
+<img src="img/activity.jpg">
+2. control
+<img src="img/control.jpg">
+3.deleteGame
+<img src="img/deleteGame.jpg>
+
