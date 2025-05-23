@@ -16,7 +16,7 @@
 
 2. Xem danh sách game (dạng bảng).
 
-3. Tìm ữ lập trình: Java
+3. Ngôn ngữ lập trình: Java
 
 Giao diện người dùng (UI):JavaFX
 
@@ -46,6 +46,6 @@ kiếm game theo tên hoặc nền tảng.
 7. Thống kê số lượng game theo thể loại hoặc nền tảng.
 
 # Công nghệ sử dụng:
-Ngôn ng
+Ngôn ngữ Java
 
 <img src="img/Activity.jpg">
