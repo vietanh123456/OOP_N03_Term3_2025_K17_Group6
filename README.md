@@ -56,5 +56,5 @@ Ngôn ngữ Java
 2. control
 <img src="img/control.jpg">
 3.deleteGame
-<img src="img/deleteGame.jpg>
+<img src="img/deleteGame.jpg">
 

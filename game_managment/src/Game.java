@@ -1,35 +1,28 @@
 public class Game {
-    private int gameId;
-    private String title;
+    private int id;
+    private String name;
     private String genre;
     private String platform;
-    private String releaseDate;
-    private String description;
-    private String coverImage;
 
-    public Game(int gameId, String title, String genre, String platform, String releaseDate, String description, String coverImage) {
-        this.gameId = gameId;
-        this.title = title;
+    public Game(int id, String name, String genre, String platform) {
+        this.id = id;
+        this.name = name;
         this.genre = genre;
         this.platform = platform;
-        this.releaseDate = releaseDate;
-        this.description = description;
-        this.coverImage = coverImage;
     }
 
-    public String getTitle() {
-        return title;
-    }
+    // Getters & Setters
+    public int getId() { return id; }
+    public String getName() { return name; }
+    public String getGenre() { return genre; }
+    public String getPlatform() { return platform; }
 
-    public String getPlatform() {
-        return platform;
-    }
+    public void setName(String name) { this.name = name; }
+    public void setGenre(String genre) { this.genre = genre; }
+    public void setPlatform(String platform) { this.platform = platform; }
 
     @Override
     public String toString() {
-        return title + " (" + platform + ") - " + genre;
+        return "[" + id + "] " + name + " - " + genre + " - " + platform;
     }
-}
-
-    
 }
