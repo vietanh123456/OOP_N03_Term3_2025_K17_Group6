@@ -1,4 +1,5 @@
 public class Main {
+    /* 
     public static void main(String[] args) {
         Game game1 = new Game(1, "The Witcher 3", "RPG", "PC");
         Game game2 = new Game(2, "God of War", "Action", "PS5");
@@ -13,4 +14,6 @@ public class Main {
             System.out.println(ug);
         }
     }
+
+    */
 }

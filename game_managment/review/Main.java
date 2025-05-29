@@ -1,4 +1,5 @@
 public class Main {
+    /* 
     public static void main(String[] args) {
         GameList gameList = new GameList();
 
@@ -15,4 +16,5 @@ public class Main {
         // In lại danh sách sau xóa
         gameList.printGameList();
     }
+        */
 }
