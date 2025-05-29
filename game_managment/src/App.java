@@ -5,6 +5,7 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
+      /* 
         System.out.println("Hello, World!");
         //TestUser.test(); chua co class TestUser
 
@@ -12,5 +13,9 @@ public class App {
        Brush b = new Brush();
        d.scrub(b);
 
-    }
+    }*/
+    
+      TestCellPhoneRing.test();
+     
+}
 }
