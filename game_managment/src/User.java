@@ -1,27 +1,17 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class User {
-    private int id;
-    private String username;
-    private List<UserGame> userGames;
+    private ArrayList<UserGame> danhSachGame;
 
-    public User(int id, String username) {
-        this.id = id;
-        this.username = username;
-        this.userGames = new ArrayList<>();
+    public User() {
+        danhSachGame = new ArrayList<>();
     }
 
-    public int getId() { return id; }
-    public String getUsername() { return username; }
-    public List<UserGame> getUserGames() { return userGames; }
-
-    public void addGame(UserGame userGame) {
-        userGames.add(userGame);
+    public void addGame(UserGame ug) {
+        danhSachGame.add(ug);
     }
 
-    @Override
-    public String toString() {
-        return "User: " + username + " (" + id + ")";
+    public ArrayList<UserGame> getDanhSachGame() {
+        return danhSachGame;
     }
 }

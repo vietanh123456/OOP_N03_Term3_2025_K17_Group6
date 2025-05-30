@@ -10,7 +10,7 @@ public class TestTime {
             e.printStackTrace();
         }
 
-        LocalDateTime end = time.getCurrentTime();
+        LocalDateTime end = Time.getCurrentTime();
         System.out.println("Duration in seconds: " + time.getDurationInSeconds(start, end));
     }
 }
