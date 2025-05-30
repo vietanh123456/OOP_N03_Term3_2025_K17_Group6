@@ -58,39 +58,7 @@ public class App {
                     break;
 
                 case 4: // Thêm game
-                    System.out.println("danh sach game co san:");
-                    for (Game g : allGames) {
-                        System.out.println(g);
-                    }
-                    System.out.print("nhap ID game muon them: ");
-                    int idThem = sc.nextInt();
-                    sc.nextLine();
-                    Game gameToAdd = null;
-                    for (Game g : allGames) {
-                        if (g.getId() == idThem) {
-                            gameToAdd = g;
-                            break;
-                        }
-                    }
-                    if (gameToAdd == null) {
-                        System.out.println("ID khong ton tai.");
-                    } else {
-                        boolean daThem = false;
-                        for (UserGame ug : user.getDanhSachGame()) {
-                            if (ug.getGame().getId() == idThem) {
-                                daThem = true;
-                                break;
-                            }
-                        }
-                        if (daThem) {
-                            System.out.println("Game da co trong danh sach.");
-                        } else {
-                            System.out.print("nhap trang thai game: ");
-                            String trangThai = sc.nextLine();
-                            user.addGame(new UserGame(user, gameToAdd, trangThai));
-                            System.out.println("da them game.");
-                        }
-                    }
+                    AddGame.addGame(user, allGames);
                     break;
 
                 case 5: // Xóa game
