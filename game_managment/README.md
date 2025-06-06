@@ -40,4 +40,6 @@ kiếm game theo tên hoặc nền tảng.
 7. Thống kê số lượng game theo thể loại hoặc nền tảng.
 
 # Công nghệ sử dụng:
-Ngôn ng
+Ngôn ngữ lập trình Java
+* Lưu đồ thuật toán:
+![alt text](image.png)
