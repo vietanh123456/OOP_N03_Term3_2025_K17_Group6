@@ -1,17 +1,14 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class User {
-    private ArrayList<UserGame> danhSachGame;
+    private List<UserGame> danhSachGame = new ArrayList<>();
 
-    public User() {
-        danhSachGame = new ArrayList<>();
+    public void addGame(UserGame userGame) {
+        danhSachGame.add(userGame);
     }
 
-    public void addGame(UserGame ug) {
-        danhSachGame.add(ug);
-    }
-
-    public ArrayList<UserGame> getDanhSachGame() {
+    public List<UserGame> getDanhSachGame() {
         return danhSachGame;
     }
 }

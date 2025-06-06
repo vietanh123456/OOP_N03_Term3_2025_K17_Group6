@@ -1,10 +1,8 @@
 public class UserGame {
-    private User user;
     private Game game;
     private String trangThai;
 
-    public UserGame(User user, Game game, String trangThai) {
-        this.user = user;
+    public UserGame(Game game, String trangThai) {
         this.game = game;
         this.trangThai = trangThai;
     }
@@ -23,6 +21,6 @@ public class UserGame {
 
     @Override
     public String toString() {
-        return game.toString() + " | Trang thai: " + trangThai;
+        return "Game: " + game.getTenGame() + ", Trạng thái: " + trangThai;
     }
 }

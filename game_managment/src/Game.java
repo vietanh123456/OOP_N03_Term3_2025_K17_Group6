@@ -26,9 +26,4 @@ public class Game {
     public String getNenTang() {
         return nenTang;
     }
-
-    @Override
-    public String toString() {
-        return "[" + id + "] " + tenGame + " - " + theLoai + " - " + nenTang;
-    }
 }

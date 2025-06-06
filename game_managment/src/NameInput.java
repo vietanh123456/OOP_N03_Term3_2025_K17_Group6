@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class NameInput {
 
     public static void nameEnter(User user, Scanner sc) {
-        System.out.print("Nhap ten game can tim: ");
+        System.out.print("Nhập tên game cần tìm: ");
         String tenTim = sc.nextLine().toLowerCase();
         boolean timThay = false;
 
@@ -15,8 +15,7 @@ public class NameInput {
         }
 
         if (!timThay) {
-            System.out.println("Khong tim thay game.");
+            System.out.println("Không tìm thấy game.");
         }
     }
 }
-
