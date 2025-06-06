@@ -47,7 +47,7 @@ Form nhập liệu khi bấm "Thêm game"
 3.deleteGame
 <img src="img/deleteGame.jpg">
 4. Lưu đồ thuật toán
-<img src="![image](https://github.com/user-attachments/assets/0ed022a2-9983-481f-a737-db26614dcc39)">
+<img src="img/luudothuattoan.jpg">
 
 
 
