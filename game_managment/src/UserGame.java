@@ -2,7 +2,7 @@ public class UserGame {
     private Game game;
     private String trangThai;
 
-    public UserGame(Game game, String trangThai) {
+    public UserGame(User user, Game game, String trangThai) {
         this.game = game;
         this.trangThai = trangThai;
     }

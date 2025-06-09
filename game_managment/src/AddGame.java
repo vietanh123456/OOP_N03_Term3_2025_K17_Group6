@@ -13,7 +13,7 @@ public class AddGame {
 
         System.out.print("Nhập ID game muốn thêm: ");
         int idThem = sc.nextInt();
-        sc.nextLine(); // bỏ dòng thừa sau khi nhập số
+        sc.nextLine(); 
 
         Game gameToAdd = null;
         for (Game g : allGames) {
