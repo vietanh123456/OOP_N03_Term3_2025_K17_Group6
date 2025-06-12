@@ -39,14 +39,12 @@ Form nhập liệu khi bấm "Thêm game"
 
 
 # diagram
-1. activity
-
+1. sơ đồ class diagam
 <img src="img/activity.jpg">
-2. control
-<img src="img/control.jpg">
-3.deleteGame
+2. Sơ dồ hành vi
+<img src="img/control.jpg">  
 <img src="img/deleteGame.jpg">
-4. Lưu đồ thuật toán
+4.sơ đồ Tìm Kiếm Game
 <img src="img/luudothuattoan.jpg">
 
 
