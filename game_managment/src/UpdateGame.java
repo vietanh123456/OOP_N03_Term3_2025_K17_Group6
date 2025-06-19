@@ -7,7 +7,7 @@ public class UpdateGame {
         try {
             System.out.print("Nhập ID game cần cập nhật: ");
             int idCapNhat = sc.nextInt();
-            sc.nextLine(); // clear buffer
+            sc.nextLine();
 
             boolean daCapNhat = false;
 
@@ -27,7 +27,7 @@ public class UpdateGame {
             }
         } catch (InputMismatchException e) {
             System.out.println("Lỗi: Vui lòng nhập số nguyên hợp lệ cho ID game.");
-            sc.nextLine(); // clear buffer
+            sc.nextLine();
         } catch (Exception e) {
             System.out.println("Đã xảy ra lỗi: " + e.getMessage());
         }

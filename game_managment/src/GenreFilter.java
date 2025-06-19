@@ -20,8 +20,6 @@ public class GenreFilter {
             }
         } catch (Exception e) {
             System.out.println("Đã xảy ra lỗi khi lọc thể loại: " + e.getMessage());
-        } finally {
-            System.out.println("Hoàn thành thao tác lọc thể loại.");
         }
     }
 }

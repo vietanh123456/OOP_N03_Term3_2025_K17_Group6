@@ -10,7 +10,7 @@ public class DeleteGame {
         try {
             System.out.print("Nhập ID game muốn xoá: ");
             int idXoa = sc.nextInt();
-            sc.nextLine(); // clear buffer
+            sc.nextLine();
 
             boolean daXoa = false;
             ArrayList<UserGame> danhSach = user.getDanhSachGame();
@@ -29,7 +29,7 @@ public class DeleteGame {
             }
         } catch (InputMismatchException e) {
             System.out.println("Lỗi: Vui lòng nhập số nguyên hợp lệ cho ID game.");
-            sc.nextLine(); // clear buffer để tránh vòng lặp bị kẹt
+            sc.nextLine();
         } catch (Exception e) {
             System.out.println("Đã xảy ra lỗi: " + e.getMessage());
         }

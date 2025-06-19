@@ -15,7 +15,7 @@ public class AddGame {
 
             System.out.print("Nhập ID game muốn thêm: ");
             int idThem = sc.nextInt();
-            sc.nextLine(); // clear buffer
+            sc.nextLine();
 
             Game gameToAdd = null;
             for (Game g : allGames) {
@@ -47,7 +47,7 @@ public class AddGame {
             }
         } catch (InputMismatchException e) {
             System.out.println("Lỗi: Vui lòng nhập một số nguyên hợp lệ cho ID game.");
-            sc.nextLine(); // clear buffer để tránh vòng lặp bị kẹt
+            sc.nextLine();
         } catch (Exception e) {
             System.out.println("Đã xảy ra lỗi: " + e.getMessage());
         }
