@@ -2,20 +2,26 @@ import java.util.Scanner;
 
 public class GenreFilter {
 
-public static void filterByGenre(User user, Scanner sc) {
-System.out.print("Nhap the loai can loc: ");
-String theLoaiLoc = sc.nextLine().toLowerCase();
-boolean coKetQua = false;
+    public static void filterByGenre(User user, Scanner sc) {
+        try {
+            System.out.print("Nhập thể loại cần lọc: ");
+            String theLoaiLoc = sc.nextLine().toLowerCase();
+            boolean coKetQua = false;
 
-for (UserGame ug : user.getDanhSachGame()) {
-if (ug.getGame().getTheLoai().toLowerCase().contains(theLoaiLoc)) {
-System.out.println(ug);
-coKetQua = true;
-}
-}
+            for (UserGame ug : user.getDanhSachGame()) {
+                if (ug.getGame().getTheLoai().toLowerCase().contains(theLoaiLoc)) {
+                    System.out.println(ug);
+                    coKetQua = true;
+                }
+            }
 
-if (!coKetQua) {
-System.out.println("Khong co game thuoc the loai nay.");
-}
-}
+            if (!coKetQua) {
+                System.out.println("Không có game thuộc thể loại này.");
+            }
+        } catch (Exception e) {
+            System.out.println("Đã xảy ra lỗi khi lọc thể loại: " + e.getMessage());
+        } finally {
+            System.out.println("Hoàn thành thao tác lọc thể loại.");
+        }
+    }
 }
