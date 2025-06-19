@@ -39,22 +39,13 @@ public class App {
                     }
                     break;
 
-                    case 2:
+                case 2:
                     NameInput.nameEnter(user, sc);
                     break;
                 
 
                 case 3:
-                    System.out.print("nhap the loai can loc: ");
-                    String theLoaiLoc = sc.nextLine().toLowerCase();
-                    boolean coKetQua = false;
-                    for (UserGame ug : user.getDanhSachGame()) {
-                        if (ug.getGame().getTheLoai().toLowerCase().contains(theLoaiLoc)) {
-                            System.out.println(ug);
-                            coKetQua = true;
-                        }
-                    }
-                    if (!coKetQua) System.out.println("khong co game thuoc the loai nay.");
+                    GenreFilter.filterByGenre(user, sc);
                     break;
 
                 case 4: // Thêm game
@@ -62,38 +53,11 @@ public class App {
                     break;
 
                 case 5: // Xóa game
-                    System.out.print("Nhap ID game muon xoa: ");
-                    int idXoa = sc.nextInt();
-                    sc.nextLine();
-                    boolean daXoa = false;
-                    ArrayList<UserGame> danhSach = user.getDanhSachGame();
-                    for (int i = 0; i < danhSach.size(); i++) {
-                        if (danhSach.get(i).getGame().getId() == idXoa) {
-                            danhSach.remove(i);
-                            daXoa = true;
-                            System.out.println("da xoa game.");
-                            break;
-                        }
-                    }
-                    if (!daXoa) System.out.println("khong tim thay game.");
+                   DeleteGame.deleteGame(user);
                     break;
 
                 case 6: // Cập nhật trạng thái
-                    System.out.print("Nhap ID game can cap nhat: ");
-                    int idCapNhat = sc.nextInt();
-                    sc.nextLine();
-                    boolean daCapNhat = false;
-                    for (UserGame ug : user.getDanhSachGame()) {
-                        if (ug.getGame().getId() == idCapNhat) {
-                            System.out.print("nhap trang thai moi: ");
-                            String trangThaiMoi = sc.nextLine();
-                            ug.setTrangThai(trangThaiMoi);
-                            System.out.println("da cap nhat trang thai moi.");
-                            daCapNhat = true;
-                            break;
-                        }
-                    }
-                    if (!daCapNhat) System.out.println("khong tim thay game can cap nhat.");
+                    UpdateGame.updateGame(user, sc);
                     break;
 
                 case 0:
