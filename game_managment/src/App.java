@@ -57,7 +57,6 @@ public class App {
                     break;
 
                 case 6: // Cập nhật trạng thái
-                    case 6: // Cập nhật trạng thái
                     UpdateGame.updateGame(user, sc);
                     break;
 
