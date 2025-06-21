@@ -1,55 +1,49 @@
 import java.util.Scanner;
-import java.util.List;
-import java.util.InputMismatchException;
 
 public class AddGame {
 
-    public static void addGame(User user, List<Game> allGames) {
-        Scanner sc = new Scanner(System.in);
+    public void addGame(User user, Scanner sc) {
 
         try {
-            System.out.println("Danh sách game có sẵn:");
-            for (Game g : allGames) {
-                System.out.println(g);
-            }
-
-            System.out.print("Nhập ID game muốn thêm: ");
-            int idThem = sc.nextInt();
+            System.out.print("Nhap ID game moi: ");
+            int id = sc.nextInt();
             sc.nextLine();
 
-            Game gameToAdd = null;
-            for (Game g : allGames) {
-                if (g.getId() == idThem) {
-                    gameToAdd = g;
+            System.out.print("Nhap ten game moi: ");
+            String tenGame = sc.nextLine();
+
+            System.out.print("Nhap the loai: ");
+            String theLoai = sc.nextLine();
+
+            System.out.print("Nhap nen tang: ");
+            String nenTang = sc.nextLine();
+
+            System.out.print("Nhap trang thai game (Da choi / Dang choi / Chua choi): ");
+            String trangThai = sc.nextLine();
+
+            // Tao Game va UserGame
+            Game newGame = new Game(id, tenGame, theLoai, nenTang);
+            UserGame newUserGame = new UserGame(user, newGame, trangThai);
+
+            // Kiem tra trung ID
+            boolean daThem = false;
+            for (UserGame ug : user.getDanhSachGame()) {
+                if (ug.getGame().getId() == id) {
+                    daThem = true;
                     break;
                 }
             }
 
-            if (gameToAdd == null) {
-                System.out.println("ID không tồn tại.");
+            if (daThem) {
+                System.out.println("Game da co trong danh sach cua ban.");
             } else {
-                boolean daThem = false;
-                for (UserGame ug : user.getDanhSachGame()) {
-                    if (ug.getGame().getId() == idThem) {
-                        daThem = true;
-                        break;
-                    }
-                }
-
-                if (daThem) {
-                    System.out.println("Game đã có trong danh sách.");
-                } else {
-                    System.out.print("Nhập trạng thái game (Đã chơi / Đang chơi / Chưa chơi): ");
-                    String trangThai = sc.nextLine();
-                    user.addGame(new UserGame(user, gameToAdd, trangThai));
-                    System.out.println("Đã thêm game vào danh sách.");
-                }
+                user.addGame(newUserGame);
+                System.out.println("Da them game moi vao danh sach cua ban.");
             }
-        } catch (InputMismatchException e) {
-            System.out.println("Lỗi: Vui lòng nhập một số nguyên hợp lệ cho ID game.");
-            sc.nextLine();
+
         } catch (Exception e) {
-            System.out.println("Đã xảy ra lỗi: " + e.getMessage());
+            System.out.println("Da xay ra loi: " + e.getMessage());
+            sc.nextLine(); // Clear buffer
         }
     }
 }

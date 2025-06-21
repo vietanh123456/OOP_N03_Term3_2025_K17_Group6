@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class NameInput {
 
-    public static void nameEnter(User user, Scanner sc) {
+    public void nameEnter(User user, Scanner sc) {
 
         try {
             System.out.print("Nhập tên game cần tìm: ");
@@ -20,13 +20,8 @@ public class NameInput {
                 System.out.println("Không tìm thấy game.");
             }
 
+        } catch (Exception e) {
+            System.out.println("Đã xảy ra lỗi: " + e.getMessage());
         }
-
-        catch (Exception e) {
-
-            System.out.println(e);
-
-        }
-
     }
 }

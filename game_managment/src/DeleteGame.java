@@ -1,11 +1,9 @@
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DeleteGame {
 
-    public static void deleteGame(User user) {
-        Scanner sc = new Scanner(System.in);
+    public void deleteGame(User user, Scanner sc) {
 
         try {
             System.out.print("Nhập ID game muốn xoá: ");
@@ -27,9 +25,7 @@ public class DeleteGame {
             if (!daXoa) {
                 System.out.println("Không tìm thấy game.");
             }
-        } catch (InputMismatchException e) {
-            System.out.println("Lỗi: Vui lòng nhập số nguyên hợp lệ cho ID game.");
-            sc.nextLine();
+        
         } catch (Exception e) {
             System.out.println("Đã xảy ra lỗi: " + e.getMessage());
         }

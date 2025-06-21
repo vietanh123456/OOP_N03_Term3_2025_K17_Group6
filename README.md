@@ -18,7 +18,7 @@
 # Công nghệ sử dụng:
 Ngôn ngữ lập trình: Java
 
-Giao diện người dùng (UI):JavaFX
+Giao diện người dùng (UI):Spring Boot
 
 Lưu trữ dữ liệu: MySQL
 # Giao diện:

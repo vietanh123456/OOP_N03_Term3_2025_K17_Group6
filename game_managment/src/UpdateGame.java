@@ -1,9 +1,8 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class UpdateGame {
 
-    public static void updateGame(User user, Scanner sc) {
+    public void updateGame(User user, Scanner sc) {
         try {
             System.out.print("Nhập ID game cần cập nhật: ");
             int idCapNhat = sc.nextInt();
@@ -25,9 +24,6 @@ public class UpdateGame {
             if (!daCapNhat) {
                 System.out.println("Không tìm thấy game cần cập nhật.");
             }
-        } catch (InputMismatchException e) {
-            System.out.println("Lỗi: Vui lòng nhập số nguyên hợp lệ cho ID game.");
-            sc.nextLine();
         } catch (Exception e) {
             System.out.println("Đã xảy ra lỗi: " + e.getMessage());
         }

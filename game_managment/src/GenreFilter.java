@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class GenreFilter {
 
-    public static void filterByGenre(User user, Scanner sc) {
+    public void filterByGenre(User user, Scanner sc) {
         try {
             System.out.print("Nhập thể loại cần lọc: ");
             String theLoaiLoc = sc.nextLine().toLowerCase();
